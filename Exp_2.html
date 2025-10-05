@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Book Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold mb-2 md:mb-0">
+                <a href="#" class="hover:text-gray-200 transition duration-300">My Book Store</a>
+            </h1>
+            <!-- Navigation -->
+            <nav class="space-x-4">
+                <a href="#" class="text-lg hover:text-gray-200 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-700">Home</a>
+                <a href="#featured" class="text-lg hover:text-gray-200 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-700">Books</a>
+                <a href="#categories" class="text-lg hover:text-gray-200 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-700">Categories</a>
+                <a href="#contact" class="text-lg hover:text-gray-200 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-700">Contact</a>
+            </nav>
+            <!-- Search Bar (optional, for future functionality) -->
+            <div class="mt-3 md:mt-0">
+                <input type="text" placeholder="Search books..." class="p-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto my-8 p-4 flex-grow">
+
+        <!-- Hero Section / Banner -->
+        <section class="bg-blue-100 rounded-lg p-8 mb-12 shadow-md text-center">
+            <h2 class="text-4xl font-extrabold text-blue-800 mb-4">Discover Your Next Great Read!</h2>
+            <p class="text-xl text-gray-700 mb-6">Explore a vast collection of books across various genres.</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                Shop Now
+            </button>
+            <img src="https://placehold.co/1200x400/ADD8E6/000000?text=Bookstore+Banner" alt="Bookstore Banner" class="mt-8 rounded-lg shadow-md w-full h-auto">
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="featured" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Featured Books</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Book Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x600/E0BBE4/000000?text=Book+Cover+1" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">The Lorem Ipsum Saga</h3>
+                        <p class="text-gray-600 text-sm mb-3">By Jane Doe</p>
+                        <p class="text-lg font-bold text-blue-700 mb-4">$19.99</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x600/957DAD/000000?text=Book+Cover+2" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Adventures in CSS</h3>
+                        <p class="text-gray-600 text-sm mb-3">By John Smith</p>
+                        <p class="text-lg font-bold text-blue-700 mb-4">$24.50</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x600/D291BC/000000?text=Book+Cover+3" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">The HTML Handbook</h3>
+                        <p class="text-gray-600 text-sm mb-3">By Alice Wonderland</p>
+                        <p class="text-lg font-bold text-blue-700 mb-4">$15.00</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x600/FFC72C/000000?text=Book+Cover+4" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">JavaScript Mastery</h3>
+                        <p class="text-gray-600 text-sm mb-3">By Bob Builder</p>
+                        <p class="text-lg font-bold text-blue-700 mb-4">$29.95</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x600/A0DAA9/000000?text=Book+Cover+5" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">The Art of Storytelling</h3>
+                        <p class="text-gray-600 text-sm mb-3">By Clara Narrator</p>
+                        <p class="text-lg font-bold text-blue-700 mb-4">$18.75</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x600/FFD8B2/000000?text=Book+Cover+6" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cooking with Code</h3>
+                        <p class="text-gray-600 text-sm mb-3">By Chef Byte</p>
+                        <p class="text-lg font-bold text-blue-700 mb-4">$22.00</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Browse Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="bg-purple-100 p-4 rounded-lg shadow-sm text-center hover:bg-purple-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-purple-800">Fiction</p>
+                </div>
+                <div class="bg-green-100 p-4 rounded-lg shadow-sm text-center hover:bg-green-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-green-800">Non-Fiction</p>
+                </div>
+                <div class="bg-yellow-100 p-4 rounded-lg shadow-sm text-center hover:bg-yellow-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-yellow-800">Science Fiction</p>
+                </div>
+                <div class="bg-red-100 p-4 rounded-lg shadow-sm text-center hover:bg-red-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-red-800">Fantasy</p>
+                </div>
+                <div class="bg-blue-100 p-4 rounded-lg shadow-sm text-center hover:bg-blue-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-blue-800">Mystery</p>
+                </div>
+                <div class="bg-indigo-100 p-4 rounded-lg shadow-sm text-center hover:bg-indigo-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-indigo-800">Biography</p>
+                </div>
+                <div class="bg-pink-100 p-4 rounded-lg shadow-sm text-center hover:bg-pink-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-pink-800">History</p>
+                </div>
+                <div class="bg-teal-100 p-4 rounded-lg shadow-sm text-center hover:bg-teal-200 transition duration-300 cursor-pointer">
+                    <p class="text-lg font-semibold text-teal-800">Children's</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-gray-800 text-white p-6 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">&copy; 2025 My Book Store. All rights reserved.</p>
+            <p class="text-sm">Contact us: info@mybookstore.com | Phone: (123) 456-7890</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-blue-400 transition duration-300">Facebook</a>
+                <a href="#" class="hover:text-blue-400 transition duration-300">Twitter</a>
+                <a href="#" class="hover:text-blue-400 transition duration-300">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
