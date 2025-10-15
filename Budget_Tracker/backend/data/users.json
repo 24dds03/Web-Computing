@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1759182694722",
+    "username": "admin",
+    "email": "saimrais@gmail.com",
+    "password": "$2a$12$Iaso.meDWQQT1TuRPLX93O/cCCJZODvE/pPFpvPiucI7jtQD6orxS",
+    "createdAt": "2025-09-29T21:51:34.722Z"
+  },
+  {
+    "id": "1759184513882",
+    "username": "Rais Saaim",
+    "email": "sa@gmail.com",
+    "password": "$2a$12$MdJGKitnp0JlORW1BTELJOzTVOiPbvHUdQ42OUMStnGZpW5jgh6Ya",
+    "createdAt": "2025-09-29T22:21:53.882Z"
+  },
+  {
+    "id": "1759212472372",
+    "username": "qwerty",
+    "email": "raisabdullah770@gmail.com",
+    "password": "$2a$12$18eGfEO3/IR4BuVlrZR4CO0FsC4CsU7zq3xF98DNH3cZjiXZBK99i",
+    "createdAt": "2025-09-30T06:07:52.372Z"
+  },
+  {
+    "id": "1759215804790",
+    "username": "admin1",
+    "email": "saaimrais5@gmail.com",
+    "password": "$2a$12$CQjJ52rz/gTwheE68YrceuuhjkYpqifJiWGSu7cdPYxomTHxNu3F6",
+    "createdAt": "2025-09-30T07:03:24.790Z"
+  },
+  {
+    "id": "1759215904153",
+    "username": "abc",
+    "email": "abc@gmial.com",
+    "password": "$2a$12$gHp4wmfdHRCgVVATs6Y4Aef0WNZM6N8rrTcr5GpZtGiDb1YG3ZDq2",
+    "createdAt": "2025-09-30T07:05:04.153Z"
+  }
+]
